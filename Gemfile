@@ -11,6 +11,7 @@ group :test, :development do
   gem 'capybara-webkit'
   gem 'capybara'
   gem 'vcr'
+  gem 'conekta'
 end
 
 group :test do
