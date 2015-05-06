@@ -1,5 +1,6 @@
 module Spree::Conekta
   module Client
+    #This client it is not longer used due Conekta Gem
     CONEKTA_API = 'https://api.conekta.io/'
 
     attr_accessor :auth_token

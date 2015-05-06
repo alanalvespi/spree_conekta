@@ -1,7 +1,7 @@
 module Spree
   module Conekta
     class CreditCard
-      include Spree::Conekta::Client
+      include Spree::Conekta::Client #ToDO have to do some refactoring here, some functions are not used.
 
       attr_reader   :customer
       attr_accessor :id, :brand, :last4
@@ -33,6 +33,7 @@ module Spree
         @last4 = card['last4']
       end
 
+      #Now the crad it is tokenized with Conekta Gem
       def create_card(token)
         response = post(token: token)
         build_card(response)
